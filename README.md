@@ -2,6 +2,9 @@
 
 CookMate AI is an AI-powered cooking assistant built using Flask and Google Gemini AI. It helps users discover recipes from ingredients or recipe names, chat with an AI Chef, watch related YouTube cooking videos, save favorite recipes, and download recipes as PDFs.
 
+🌐 Live Demo
+👉 [CookMate AI](https://cookmate-ai-17.onrender.com)
+
  ✨ Features
 
 * 🤖 AI Recipe Generator
