@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favorite Recipes</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>❤️ Favorite Recipes</h1>
+
+    {% if data %}
+
+        {% for item in data %}
+
+        <div class="recipe-card">
+
+    <h2>{{ item[1] }}</h2>
+
+    {% if item[3] %}
+    <div style="text-align:center;">
+        <img src="{{ item[3] }}"
+             alt="Recipe Image"
+             style="max-width:300px;
+                    width:100%;
+                    height:220px;
+                    object-fit:cover;
+                    border-radius:12px;">
+    </div>
+    <br>
+    {% endif %}
+
+    <pre>{{ item[2] }}</pre>
+
+</div>
+
+        {% endfor %}
+
+    {% else %}
+
+        <h3>No favorite recipes yet 😔</h3>
+
+    {% endif %}
+
+    <br>
+
+    <a href="/">
+        🏠 Back to Home
+    </a>
+
+</div>
+
+</body>
+</html>

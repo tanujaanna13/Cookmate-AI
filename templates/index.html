@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CookMate AI</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🍳 CookMate AI</h1>
+
+    <!-- ===================== RECIPE SEARCH ===================== -->
+    <form action="/search" method="POST">
+
+        <input
+            type="text"
+            name="query"
+            placeholder="Enter ingredients or recipe name"
+            required>
+
+        <br><br>
+
+        <select name="language">
+            <option>English</option>
+            <option>Telugu</option>
+            <option>Hindi</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">
+            Search Recipe
+        </button>
+
+    </form>
+
+    
+
+
+    <!-- ===================== FEATURES ===================== -->
+    <button type="button" onclick="toggleDarkMode()">
+        🌙 Dark Mode
+    </button>
+
+    <button type="button" onclick="startVoice()">
+        🎤 Voice Search
+    </button>
+
+    <br><br>
+
+    <a href="/history">📜 View History</a>
+    <br><br>
+
+    <a href="/favorites">❤️ View Favorites</a>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#ff6b35;
+}
+
+input{
+    width:70%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+select{
+    padding:12px;
+    border-radius:8px;
+}
+
+button{
+    background:#ff6b35;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+pre{
+    white-space:pre-wrap;
+    font-family:'Poppins',sans-serif;
+    line-height:1.8;
+    background:#fafafa;
+    padding:20px;
+    border-radius:10px;
+}
+
+a{
+    text-decoration:none;
+    color:#ff6b35;
+    font-weight:600;
+}
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+h1{
+    color:#ff6b35;
+}
+
+input{
+    width:70%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+select{
+    padding:12px;
+}
+
+button{
+    background:#ff6b35;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin:5px;
+}
+
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .container{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark input,
+.dark select{
+    background:#2a2a2a;
+    color:white;
+    border:1px solid #555;
+}
+
+.dark a{
+    color:#ffb38a;
+}
+.recipe-card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:12px;
+    box-shadow:0px 2px 10px rgba(0,0,0,0.1);
+    text-align:left;
+}
+
+.recipe-card h2{
+    color:#ff6b35;
+}
+
+.recipe-card pre{
+    white-space:pre-wrap;
+    font-family:'Poppins',sans-serif;
+    line-height:1.7;
+}
